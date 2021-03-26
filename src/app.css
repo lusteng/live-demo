@@ -1,0 +1,42 @@
+  .alive {
+    width: 770px;
+    height: 420px;
+    /* background-color: coral; */
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .gift,.stage,.video-box{
+    position: absolute;
+    top: 0;
+    left: 0; 
+  } 
+  .gift{
+      z-index: 1000;
+  }
+  .stage{
+    z-index: 999;
+  }
+  .video-box{
+    z-index: 998;
+  }
+ 
+    
+    
+  /* 在浏览器找到对应的class名称。然后通过穿透对样式进行更改 */
+
+  /* 禁止循环播放显示 */
+  /* .paly-root >>> .dplayer-setting-loop {
+    background-color: cyan;
+    display: none;
+  } */
+
+  /* 禁止出现快进多少秒提示 */
+  /* .play-root /deep/ .dplayer-notice {
+    display: none;
+  } */
+
+  /* 禁止右键自定义列表 */
+  /* .play-root /deep/ .dplayer-menu-show{
+     display: none;
+  } */
