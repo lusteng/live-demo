@@ -38,6 +38,11 @@
             打赏下主播呗
           </Button> 
         </div>  
+        <div class="bar-item"> 
+          <Button @click="handlePicture">
+            画中画
+          </Button> 
+        </div>  
     </div>
     <!-- 展示条 --> 
   </div>
@@ -85,6 +90,19 @@
       }
     },
     methods:{
+      handlePicture(){
+        if (!document.pictureInPictureElement) {
+          document.getElementsByClassName('dplayer-video')[0].requestPictureInPicture()
+          .catch(error => {
+            console.log(error);
+          });
+        } else {
+          document.exitPictureInPicture()
+          .catch(error => {
+            console.log(error);
+          });
+        }
+      },
       handleSentStage(o){ 
         console.log(src);
         let {
