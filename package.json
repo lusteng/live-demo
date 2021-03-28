@@ -12,7 +12,9 @@
     "dplayer": "^1.26.0",
     "hls.js": "^0.14.17",
     "iview": "^3.5.4",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-animate": "0.0.4",
+    "vue-wow": "^1.2.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
